@@ -55,7 +55,9 @@ public class Reflector {
 
   private static final MethodHandle isRecordMethodHandle = getIsRecordMethodHandle();
   private final Class<?> type;
+  // 可读属性的名称集合
   private final String[] readablePropertyNames;
+  // 可写属性名称集合
   private final String[] writablePropertyNames;
   private final Map<String, Invoker> setMethods = new HashMap<>();
   private final Map<String, Invoker> getMethods = new HashMap<>();
